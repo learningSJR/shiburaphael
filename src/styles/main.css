@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background-dark text-text-dark font-sans antialiased;
+  }
+
+  a {
+    @apply text-blue-400 hover:text-blue-300 transition;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .card {
+    @apply bg-surface-dark border border-border-dark rounded-lg shadow-sm hover:shadow-md transition;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-500;
+  }
+
+  .btn-outline {
+    @apply border border-blue-500 text-blue-400 hover:bg-blue-500/10;
+  }
+  .floating-nav {
+    @apply fixed top-10 inset-x-0 mx-auto flex max-w-fit items-center justify-center 
+           pr-2 pl-8 py-2 border border-transparent dark:border-white/20 rounded-full
+           bg-white dark:bg-black shadow-lg space-x-4 z-[5000];
+  }
+
+  .floating-link {
+    @apply flex items-center space-x-1 text-sm text-neutral-600 
+           dark:text-neutral-200 hover:text-blue-400 transition;
+  }
+
+  .floating-button {
+    @apply border text-sm font-medium border-neutral-200 dark:border-white/20 
+           text-black dark:text-white px-4 py-2 rounded-full relative;
+  }
+
+  .floating-button::after {
+    content: "";
+    @apply absolute inset-x-0 w-1/2 mx-auto -bottom-px h-px 
+           bg-gradient-to-r from-transparent via-blue-500 to-transparent;
+  }
+}

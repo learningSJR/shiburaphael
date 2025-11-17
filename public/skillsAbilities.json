@@ -1,0 +1,65 @@
+[
+  {
+    "category": "UI Development",
+    "items": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "JavaScript",
+      "Bootstrap",
+      "Angular Framework"
+    ]
+  },
+  {
+    "category": "UI Design",
+    "items": [
+      "Figma",
+      "Adobe XD",
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign"
+    ]
+  },
+  {
+    "category": "Design Systems",
+    "items": ["Carbon Design System for Angular"]
+  },
+  {
+    "category": "Web Development",
+    "items": [
+      "Responsive Web Design",
+      "Custom Directives",
+      "Pipes",
+      "Services",
+      "API Integration (RESTful APIs)",
+      "JSON and Data Parsing"
+    ]
+  },
+  {
+    "category": "Testing",
+    "items": ["Unit Testing (Jasmine)"]
+  },
+  {
+    "category": "Tools",
+    "items": ["Browser Developer Tools"]
+  },
+  {
+    "category": "Best Practices",
+    "items": ["Error Handling and Debugging Techniques"]
+  },
+  {
+    "category": "Methodologies",
+    "items": ["Scrum", "Agile Methodologies"]
+  },
+  {
+    "category": "Soft Skills",
+    "items": [
+      "Project Planning and Task Management",
+      "Problem-Solving and Analytical Thinking",
+      "Communication and Collaboration",
+      "Attention to Detail",
+      "Time Management and Meeting Deadlines",
+      "Adaptability and Quick Learning"
+    ]
+  }
+]

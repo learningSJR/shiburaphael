@@ -1,0 +1,18 @@
+html,
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.card {
+  padding: 2rem;
+}
+main {
+  @media (width < 40em) {
+    .ptop {
+      padding-top: 1rem;
+    }
+    p.summary {
+      padding: 0 2rem;
+    }
+  }
+}
