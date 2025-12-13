@@ -15,11 +15,14 @@ import Footer from "@/components/layout/Footer.jsx";
 // import Contact from "@/pages/Contact.jsx";
 import "@/App.scss";
 import Counter from "./pages/Counter";
+import MyResume from "./pages/MyResume";
+import { GridBackgroundAce } from "./components/ui/GridBackground";
 
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Projects = lazy(() => import("@/pages/Projects"));
 const Contact = lazy(() => import("@/pages/Contact"));
+const Contactus = lazy(() => import("@/pages/Contactus"));
 
 export default function App() {
   return (
@@ -32,6 +35,7 @@ export default function App() {
         {/* <NavFloatingAceV2 /> */}
 
         {/* 🔹 Page Routes */}
+
         <div className="flex-1">
           <Routes>
             <Route
@@ -63,6 +67,22 @@ export default function App() {
               element={
                 <Suspense fallback={<p>Loading...</p>}>
                   <Contact />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contactus"
+              element={
+                <Suspense fallback={<p>Loading...</p>}>
+                  <Contactus />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/myresume"
+              element={
+                <Suspense fallback={<p>Loading...</p>}>
+                  <MyResume />
                 </Suspense>
               }
             />

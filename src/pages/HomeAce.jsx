@@ -23,6 +23,7 @@ import MagicButton from "@/components/ui/MagicButton.jsx";
 import { Contact2Icon, MailIcon } from "lucide-react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import SkillsAbilities from "@/pages/SkillsAbilities";
+import CarouselAce from "./CarouselAce";
 
 export default function HomeAce() {
   return (
@@ -59,14 +60,14 @@ export default function HomeAce() {
                 Projects →
               </button> */}
 
-              <a href="#about">
+              <a href="contactus">
                 <MagicButton
                   title="Contact"
                   icon={<MailIcon />}
                   // position="right"
                 />
               </a>
-              <a href="#about">
+              <a href="projects">
                 <MagicButton
                   title="Projects"
                   icon={<FaLocationArrow />}
@@ -99,13 +100,13 @@ export default function HomeAce() {
           </SparklesAce>
         </section>
       </Reveal>
-      <Reveal direction="up" delay={0.5}>
+      {/* <Reveal direction="up" delay={0.5}>
         <section>
           <SparklesAce title="Apple">
             <AppleCardsCarouselAce />
           </SparklesAce>
         </section>
-      </Reveal>
+      </Reveal> */}
       <Reveal direction="up" delay={0.5}>
         <section>
           <SparklesAce title="Works">
@@ -113,6 +114,13 @@ export default function HomeAce() {
           </SparklesAce>
         </section>
       </Reveal>
+      {/* <Reveal direction="up" delay={0.5}>
+        <section>
+          <SparklesAce title="Works2">         
+            <CarouselAce />
+          </SparklesAce>
+        </section>
+      </Reveal> */}
       <Reveal direction="up" delay={0.6}>
         <section>
           <SparklesAce title="Skills">
@@ -121,13 +129,13 @@ export default function HomeAce() {
         </section>
       </Reveal>
 
-      <Reveal direction="up" delay={0.6}>
+      {/* <Reveal direction="up" delay={0.6}>
         <section>
           <SparklesAce title="Skills">
             <SkillsAbilities />
           </SparklesAce>
         </section>
-      </Reveal>
+      </Reveal> */}
 
       {/* <Reveal>
         <HeroScrollAce
@@ -507,27 +515,34 @@ function AppleCardsCarouselAce() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
+      {[...new Array(1).fill(1)].map((_, index) => {
         return (
           <div
             key={"dummy-content" + index}
             className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
           >
-            <p className="max-w-3xl mx-auto font-sans text-base text-neutral-600 dark:text-neutral-400 md:text-2xl">
+            <p className="max-w-3xl mx-auto font-sans text-base text-neutral-600 dark:text-neutral-400 md:text-xl">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
+                Automated and Actionable Insights for Retailers
               </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
+              Retailers are equipped with the latest BI platforms, yet they are
+              unable to easily get to the pulse of their Business, Market or
+              Customer. Reports and charts alone can only go so far. Businesses
+              need to be able to consume insights without needing data analysts
+              to explain them! AI Augmented BI is the core of Retail AI Insights
+              360. Unlike traditional BI which provides reports and charts, AI
+              Augmented BI provides ready-to-consume insights suitable for
+              decision makers and executives. Further, the AI chat interface
+              enables live interaction with the data for any additional queries.
+              Our multi-stage data, BI and AI processing methodology makes this
+              possible.
             </p>
             <img
-              src="https://assets.aceternity.com/macbook.png"
+              src="Dashboard.png"
               alt="Macbook mockup from Aceternity UI"
-              height="500"
               width="500"
-              className="object-contain w-full h-full mx-auto md:w-1/2 md:h-1/2"
+              height="500"
+              className="object-contain w-full h-full mx-auto md:w-2/2 md:h-2/2"
             />
           </div>
         );
@@ -538,9 +553,9 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Retail",
+    title: "With Retail AI Insights 360, the thinking is already done for you.",
+    src: "Dashboard.png",
     content: <DummyContent />,
   },
   {

@@ -1,7 +1,7 @@
 html,
 body {
-  overflow: scroll;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .card {
   padding: 2rem;

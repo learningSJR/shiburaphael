@@ -1,3 +1,38 @@
 body {
   @apply bg-[#0d1117] text-[#c9d1d9] font-sans antialiased;
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    margin: 0;
+    background: white;
+    overflow: visible !important;
+  }
+
+  /* Hide global UI (nav, footer, effects) */
+  .floating-dock,
+  footer,
+  header.site-header,
+  button {
+    display: none !important;
+  }
+
+  /* Resume container */
+  #resume-container {
+    position: static; /* ❗ VERY IMPORTANT */
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  /* Force page breaks */
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+}

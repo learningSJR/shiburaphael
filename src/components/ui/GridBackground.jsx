@@ -4,7 +4,7 @@ import Home from "../../pages/HomeAce";
 
 export function GridBackgroundAce() {
   return (
-    <div className="relative flex  w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative flex items-center justify-center w-full bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",
@@ -15,7 +15,7 @@ export function GridBackgroundAce() {
       />
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-      <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-2xl">
+      <p className="relative z-20 py-8 text-4xl font-bold text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-2xl">
         <Home />
       </p>
     </div>

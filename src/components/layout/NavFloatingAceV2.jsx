@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { HiOutlineHome } from "react-icons/hi";
+import { AiOutlineProduct } from "react-icons/ai";
+import { MdOutlineContactMail } from "react-icons/md";
 import {
   IconBrandGithub,
   IconBrandX,
@@ -13,7 +16,9 @@ import {
   IconContract,
   IconMail,
   IconBrandLinkedin,
+  IconFileCv,
 } from "@tabler/icons-react";
+import MyResume from "@/pages/MyResume";
 
 export function FloatingDockAce() {
   const [open, setOpen] = useState(false);
@@ -31,14 +36,24 @@ export function FloatingDockAce() {
   }, []);
 
   const links = [
-    { title: "Home", icon: <IconHome />, href: "/" },
-    { title: "Products", icon: <IconTerminal2 />, href: "/projects" },
-    { title: "Components", icon: <IconMail />, href: "/about" },
+    { title: "Home", icon: <HiOutlineHome />, href: "/" },
+    { title: "Products", icon: <AiOutlineProduct />, href: "/projects" },
+    // { title: "Components", icon: <IconMail />, href: "/about" },
     // { title: "Changelog", icon: <IconExchange />, href: "#" },
-    { title: "Twitter", icon: <IconBrandLinkedin />, href: "#" },
+    // { title: "Twitter", icon: <IconBrandLinkedin />, href: "#" },
     // { title: "Twitter", icon: <IconBrandX />, href: "#" },
-    { title: "GitHub", icon: <IconBrandGithub />, href: "#" },
-    { title: "Behance", icon: <IconBrandBehance />, href: "#" },
+    {
+      title: "Linkedin",
+      icon: <IconBrandLinkedin />,
+      href: "https://www.linkedin.com/in/shiburaphael/",
+    },
+    {
+      title: "Behance",
+      icon: <IconBrandBehance />,
+      href: "https://www.behance.net/shiburaphael",
+    },
+    { title: "My Resume", icon: <IconFileCv />, href: "/myresume" },
+    { title: "Contact Us", icon: <IconMail />, href: "/contactus" },
   ];
 
   return (

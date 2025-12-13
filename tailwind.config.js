@@ -8,6 +8,10 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        "dark-radial":
+          "linear-gradient(90deg, #3b0000 0.000%, #00001e 50.000%, #085b63 100.000%)",
+      },
       animation: {
         "slide-x": "slide-x 4s ease-in-out infinite", // 👈 custom animation
         "gradient-move": "gradient-move 6s linear infinite",
