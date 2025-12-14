@@ -9,7 +9,7 @@ import { VortexAce } from "@/components/ui/VortexAce.jsx";
 
 import Footer from "@/components/layout/Footer.jsx";
 
-// import Home from "@/pages/Home.jsx";
+import Home from "@/pages/Home.jsx";
 // import About from "@/pages/About.jsx";
 // import Projects from "@/pages/Projects.jsx";
 // import Contact from "@/pages/Contact.jsx";
@@ -20,7 +20,7 @@ import { GridBackgroundAce } from "./components/ui/GridBackground";
 import Navbar from "./components/layout/Navbar";
 import NavLinkHeaderLeft from "./components/layout/NavLinkHeaderLeft";
 
-const Home = lazy(() => import("@/pages/Home"));
+//const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Projects = lazy(() => import("@/pages/Projects"));
 const Contact = lazy(() => import("@/pages/Contact"));
@@ -45,9 +45,9 @@ export default function App() {
             <Route
               path="/"
               element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <Home />
-                </Suspense>
+                <Home />
+                // <Suspense fallback={<p>Loading...</p>}>
+                // </Suspense>
               }
             />
             <Route
