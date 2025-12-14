@@ -6,25 +6,25 @@ import WeatherApp from "./WeatherApp";
 
 export default function Projects() {
   return (
-    <main className="section space-y-16 xl:px-12">
+    <main className="space-y-16 section xl:px-12">
       <Reveal>
-        <h2 className="text-4xl font-heading font-bold text-primary text-center">
+        <h2 className="text-4xl font-bold text-center font-heading text-primary">
           Projects
         </h2>
       </Reveal>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid gap-8 md:grid-cols-2">
         {profile.projects.map((project, i) => (
           <Reveal key={i} delay={i * 0.15}>
             <div className="card">
               <h3 className="text-xl font-semibold text-primary">
                 {project.title}
               </h3>
-              <p className="text-slate-700 text-sm mt-2">{project.desc}</p>
-              <p className="text-xs text-secondary mt-3">{project.framework}</p>
-              <Button variant="outline" className="mt-4">
+              <p className="mt-2 text-sm text-slate-700">{project.desc}</p>
+              <p className="mt-3 text-xs text-secondary">{project.framework}</p>
+              {/* <Button variant="outline" className="mt-4">
                 View Details
-              </Button>
+              </Button> */}
             </div>
           </Reveal>
         ))}

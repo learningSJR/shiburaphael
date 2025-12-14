@@ -6,7 +6,7 @@ export function VortexAce({ children }) {
       <div className="absolute inset-0 z-10 w-full h-full bg-black/40" />
       <Vortex
         // backgroundColor="black"
-        className="flex flex-col items-center justify-center w-full h-full px-2 py-4 md:px-10"
+        className="flex items-center justify-start w-full h-full px-2 py-4 md:px-10"
       >
         {children}
       </Vortex>

@@ -17,6 +17,8 @@ import "@/App.scss";
 import Counter from "./pages/Counter";
 import MyResume from "./pages/MyResume";
 import { GridBackgroundAce } from "./components/ui/GridBackground";
+import Navbar from "./components/layout/Navbar";
+import NavLinkHeaderLeft from "./components/layout/NavLinkHeaderLeft";
 
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
@@ -28,7 +30,9 @@ export default function App() {
   return (
     <>
       <FloatingDockAce />
-      <VortexAce />
+      <VortexAce>
+        <NavLinkHeaderLeft />
+      </VortexAce>
       <main className="relative flex flex-col">
         {/* 🔹 Floating Navbar visible on all pages */}
         {/* <FloatingNavAce /> */}
