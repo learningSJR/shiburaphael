@@ -1,0 +1,27 @@
+[
+  {
+    "architecture": [
+      "Component-driven development",
+      "Design systems",
+      "Feature-sliced design",
+      "Micro-frontends (Module Federation)"
+    ],
+    "stateManagement": ["Redux", "Context API"],
+    "tooling": [
+      "Webpack",
+      "Vite",
+      "npm",
+      "yarn",
+      "Git",
+      "GitHub",
+      "CI/CD pipelines"
+    ],
+    "performance": [
+      "Code splitting",
+      "Lazy loading",
+      "Tree-shaking",
+      "Memoization",
+      "Lighthouse optimization"
+    ]
+  }
+]

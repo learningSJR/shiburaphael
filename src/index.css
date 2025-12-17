@@ -1,6 +1,9 @@
 body {
   @apply bg-[#0d1117] text-[#c9d1d9] font-sans antialiased;
 }
+.clip-header {
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+}
 
 @media print {
   @page {

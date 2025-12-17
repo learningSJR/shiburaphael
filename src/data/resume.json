@@ -1,0 +1,288 @@
+[
+  {
+    "basics": {
+      "name": "Shibu John Raphael",
+      "titleHead": "UI/UX Lead",
+      "title": "Front-End Architect | AI-Augmented Developer",
+      "summary": [
+        "Front-End Developer (React.js) with 5+ years of hands-on experience building scalable, performant, and responsive web applications, backed by 10+ years of strong UI/UX expertise. Specialized in React.js, Redux, JavaScript (ES6+), Tailwind  CSS, Material UI, Bootstrap, Shadcn UI, and component-driven architecture. Experienced in micro-frontend development using Module Federation, reusable component libraries, performance optimization, REST API integration, and modern build pipelines\n.",
+        "Bringing a unique hybrid strength of intuitive design thinking + high-quality engineering, ensuring pixel-perfect, accessible, and user-focused interfaces. Adept at collaborating with cross-functional teams, modernizing front-end workflows, integrating AI-assisted development tools, and driving consistent UI engineering practices."
+      ],
+
+      "linkedin": "https://www.linkedin.com/in/shiburaphael/",
+      "image": "/shibu-sjr.jpg",
+      "links": [
+        {
+          "type": "phone",
+          "value": "+91-9790740963",
+          "icon": "phone"
+        },
+        {
+          "type": "email",
+          "value": "shiburaphael@gmail.com",
+          "icon": "email"
+        },
+
+        {
+          "type": "linkedin",
+          "value": "https://www.linkedin.com/in/shiburaphael/",
+          "icon": "linkedin"
+        },
+        {
+          "type": "location",
+          "value": "Chennai",
+          "icon": "location"
+        }
+      ]
+    },
+
+    "skills": {
+      "React.js Front-End Engineering": [
+        "React.js, Redux workflows, component-driven development",
+        "JavaScript (ES6+), HTML5, CSS3, SCSS",
+        "Tailwind CSS, Material UI, Bootstrap, Shadcn UI",
+        "Micro-frontend architecture (Module Federation)",
+        "RESTful API integration, JWT authentication",
+        "Webpack, Vite, npm/yarn, CI/CD pipelines",
+        "Reusable component libraries & UI style guide maintenance",
+        "Git, GitHub, version control workflows"
+      ],
+      "UX & Product Design": [
+        "UX research, usability testing, heuristic evaluations",
+        "Wireframes, user flows, prototypes, interaction design",
+        "Figma, Adobe XD, Axure, Framer",
+        "Responsive design, accessibility (WCAG)",
+        "Design systems & cross-team collaboration"
+      ]
+    },
+
+    "experience": [
+      {
+        "company": "Customer Analytics Pvt. Ltd",
+        "role": "Lead Front-End Developer | UI Engineer",
+        "duration": "2009 – 2024",
+        "responsibilities": [
+          "Built scalable front-end applications using React.js, Tailwind CSS, Material UI, Bootstrap, and Shadcn UI.",
+          "Developed and maintained 30+ reusable React components, accelerating development velocity.",
+          "Implemented micro-frontend architecture using Module Federation across distributed teams.",
+          "Improved application performance by 30% through memoization, code optimization, and efficient state management.",
+          "Reduced bundle size by 22% using tree-shaking and dynamic imports.",
+          "Improved Lighthouse performance score from 68 to 92 and reduced page load time by 2.3 seconds.",
+          "Delivered 5+ independent micro-frontend modules for modular deployment.",
+          "Designed and enforced component-based and feature-sliced design systems.",
+          "Used AI-assisted development tools to improve code quality and productivity.",
+          "Collaborated closely with backend, product, and QA teams using CI/CD workflows."
+        ]
+      },
+      {
+        "company": "Horizon Solutions & Services",
+        "role": "Web Designer / Front-End Developer",
+        "duration": "2007 – 2009",
+        "responsibilities": [
+          "Designed and developed company websites using HTML, CSS, and JavaScript.",
+          "Implemented responsive layouts and cross-browser compatibility.",
+          "Worked closely with clients to translate requirements into UI solutions."
+        ]
+      },
+      {
+        "company": "Sadco Plastic Industries",
+        "role": "Graphic & Web Designer",
+        "duration": "2004 – 2007",
+        "responsibilities": [
+          "Designed static websites using HTML and CSS.",
+          "Created branding and marketing creatives aligned with company identity."
+        ]
+      },
+      {
+        "company": "Radium Caltech Pvt. Ltd",
+        "role": "Graphic Designer",
+        "duration": "2003 – 2004",
+        "responsibilities": [
+          "Designed website layouts and digital UI assets.",
+          "Supported development teams with visual and UI resources."
+        ]
+      },
+      {
+        "company": "S. Joseph & Co.",
+        "role": "Audit Assistant / Accountant",
+        "duration": "1999 – 2002",
+        "responsibilities": [
+          "Maintained books of accounts and prepared ledgers and trial balances.",
+          "Handled voucher entries, concurrent audits, and financial documentation."
+        ]
+      }
+    ],
+
+    "projects": [
+      {
+        "id": "codaworx",
+        "name": "CodaWorx",
+        "implementation": [
+          "Developed reusable React UI components and dashboards using Tailwind CSS.",
+          "Implemented component-based and feature-sliced design architecture.",
+          "Integrated REST APIs and optimized rendering performance.",
+          "Built shared UI component libraries for scalability."
+        ],
+        "tech": ["React.js", "Tailwind CSS", "REST APIs"]
+      },
+      {
+        "id": "customeranalytics",
+        "name": "CustomerAnalytics.com",
+        "implementation": [
+          "Developed corporate website using React.js with SEO-friendly routing.",
+          "Implemented reusable layouts and lazy-loaded pages.",
+          "Built a Tailwind-based design system ensuring WCAG accessibility.",
+          "Optimized performance and Lighthouse scores."
+        ],
+        "tech": ["React.js", "Tailwind CSS", "SCSS"]
+      },
+      {
+        "id": "thehub",
+        "name": "The Hub Re-Platform (Tempur Sealy International)",
+        "implementation": [
+          "Built API-driven React UI components.",
+          "Improved workflows through UX and interaction enhancements.",
+          "Applied modular front-end architecture."
+        ],
+        "tech": ["React.js", "Material UI"]
+      }
+    ],
+
+    "education": [
+      {
+        "degree": "Bachelor of Commerce",
+        "institution": "University of Kerala"
+      },
+      {
+        "degree": "Post Graduate Diploma in Computer Applications (PGDCA)",
+        "institution": "Bytel Infotech"
+      },
+      {
+        "degree": "Arena Multimedia Specialist Program (AMSP)",
+        "institution": "Areana School of Animation"
+      }
+    ],
+    "ProfessionalExperience": [
+      {
+        "period": "2009 – 2024",
+        "company": "Customer Analytics Pvt. Ltd",
+        "location": "Chennai",
+        "role": "Lead Front-End Developer & UI/UX Specialist",
+        "responsibilities": [
+          "Built scalable, high-performance front-end applications using React.js, Tailwind CSS, Material UI, Bootstrap, and ShadCN UI.",
+          "Architected and implemented micro-frontend solutions using Module Federation, enabling independent deployments across teams.",
+          "Developed 30+ reusable React components and shared component libraries, accelerating feature delivery and improving consistency.",
+          "Improved application performance by 30% through memoization, code splitting, and optimized rendering strategies.",
+          "Reduced bundle size by 22% using tree-shaking, lazy loading, and dynamic imports.",
+          "Improved Google Lighthouse scores from 68 → 92, reducing initial load time by 2.3 seconds.",
+          "Delivered 5+ production-grade micro-frontend modules supporting modular architecture.",
+          "Designed and maintained component-driven design systems, ensuring UI scalability and visual consistency.",
+          "Integrated REST APIs, authentication flows, and complex UI workflows.",
+          "Used AI-assisted development tools to improve productivity, code quality, and debugging.",
+          "Collaborated closely with backend, product, and QA teams using Agile and CI/CD pipelines."
+        ],
+        "techStack": [
+          "React.js",
+          "JavaScript (ES6+)",
+          "Tailwind CSS",
+          "Material UI",
+          "Bootstrap",
+          "ShadCN UI",
+          "Module Federation",
+          "REST APIs",
+          "Webpack",
+          "Vite",
+          "Git",
+          "CI/CD"
+        ]
+      },
+      {
+        "period": "2007 – 2009",
+        "company": "Horizon Solutions & Services",
+        "role": "Graphic / Web Designer",
+        "responsibilities": [
+          "Designed and developed responsive websites using HTML5, CSS3, and JavaScript.",
+          "Converted visual designs into functional, cross-browser-compatible web pages.",
+          "Worked directly with clients to deliver user-friendly web solutions."
+        ]
+      },
+      {
+        "period": "2004 – 2007",
+        "company": "Sadco Plastic Industries",
+        "role": "Graphic Designer",
+        "responsibilities": [
+          "Designed corporate websites and marketing materials.",
+          "Developed static web pages using HTML and CSS.",
+          "Created branding and visual assets for digital and print."
+        ]
+      },
+      {
+        "period": "2003 – 2004",
+        "company": "Radium Caltech Pvt. Ltd",
+        "role": "Graphic Designer",
+        "responsibilities": [
+          "Designed web layouts, graphics, and static pages.",
+          "Supported web and branding projects using HTML and CSS."
+        ]
+      },
+      {
+        "period": "1999 – 2002",
+        "company": "S. Joseph & Co.",
+        "role": "Audit Assistant / Accountant",
+        "responsibilities": [
+          "Maintained books of accounts, ledgers, vouchers, and trial balances.",
+          "Assisted with audits and financial documentation.",
+          "Supported accounting and compliance activities."
+        ]
+      }
+    ],
+    "projectHighlights": [
+      {
+        "name": "CodaWorx",
+        "highlights": [
+          "Developed scalable UI components using React.js + Tailwind CSS.",
+          "Built dashboards, listing components and reusable UI modules.",
+          "Integrated REST APIs and improved rendering performance."
+        ]
+      },
+      {
+        "name": "CustomerAnalytics.com — Corporate Website",
+        "highlights": [
+          "Developed full React.js website UI with Tailwind + SCSS.",
+          "Implemented SEO-friendly pages, reusable layouts, lazy loading & optimized assets.",
+          "Improved Lighthouse scores and ensured WCAG accessibility."
+        ]
+      },
+      {
+        "name": "The Hub Re-Platform — Tempur Sealy International",
+        "highlights": [
+          "Built intuitive React components and API-driven UI screens.",
+          "Improved engagement through UX enhancements and workflow improvements."
+        ]
+      },
+      {
+        "name": "Other Projects",
+        "highlights": [
+          "Royal Prestige, iMetx, TSI Connect Retailer, Product Pricing Portal — delivered responsive React UIs, component libraries, micro-frontend modules, and mobile-first solutions across multiple enterprise products."
+        ]
+      }
+    ],
+    "strengths": {
+      "Functional Strengths": [
+        "Project Management",
+        "UX Leadership",
+        "Problem Solving",
+        "Communication",
+        "Time Management"
+      ],
+      "Languages": ["English", "Hindi", "Tamil", "Malayalam"]
+    },
+
+    "certifications": [
+      "Create High-Fidelity Designs and Prototypes in Figma — Google/Coursera",
+      "Conduct UX Research and Test Early Concepts — Google/Coursera",
+      "Craft stunning UI/UX design as a digital product designer",
+      "GenAI Fundamentals for UX Designers + Researchers"
+    ]
+  }
+]

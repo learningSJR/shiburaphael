@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, useLayoutEffect } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -7,122 +7,101 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
-}: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
-  direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
-  pauseOnHover?: boolean;
-  className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    addAnimation();
-  }, []);
+  const containerRef = useRef(null);
+  const scrollerRef = useRef(null);
+  const cardRefs = useRef([]);
   const [start, setStart] = useState(false);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+  const [maxHeight, setMaxHeight] = useState(0);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
+  // Duplicate items for infinite scroll
+  useEffect(() => {
+    if (!containerRef.current || !scrollerRef.current) return;
 
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }
-  const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
-      }
-    }
+    const children = Array.from(scrollerRef.current.children);
+
+    children.forEach((child) => {
+      const clone = child.cloneNode(true);
+      scrollerRef.current.appendChild(clone);
+    });
+
+    setDirection();
+    setSpeed();
+    setStart(true);
+  }, []);
+
+  // Calculate tallest card height
+  useLayoutEffect(() => {
+    if (!cardRefs.current.length) return;
+
+    const heights = cardRefs.current.map((el) => el?.offsetHeight || 0);
+
+    setMaxHeight(Math.max(...heights));
+  }, [items]);
+
+  const setDirection = () => {
+    if (!containerRef.current) return;
+    containerRef.current.style.setProperty(
+      "--animation-direction",
+      direction === "left" ? "forwards" : "reverse"
+    );
   };
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
-    }
+
+  const setSpeed = () => {
+    if (!containerRef.current) return;
+    const duration =
+      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
+    containerRef.current.style.setProperty("--animation-duration", duration);
   };
+
   return (
-    <>
-      <div
-        ref={containerRef}
+    <div
+      ref={containerRef}
+      className={cn(
+        "scroller relative z-20 max-w-7xl overflow-hidden",
+        "[mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        className
+      )}
+    >
+      <ul
+        ref={scrollerRef}
         className={cn(
-          "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-          className
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
+          start && "animate-scroll",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        <ul
-          ref={scrollerRef}
-          className={cn(
-            "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
-            start && "animate-scroll",
-            pauseOnHover && "hover:[animation-play-state:paused]"
-          )}
-        >
-          {items.map((item, idx) => (
-            <li
-              className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 md:w-[450px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]  text-black dark:text-white border-neutral-200 dark:border-slate-800"
-              key={item.name}
-              duration={Math.floor(Math.random() * 10000) + 10000}
-              borderRadius="1.75rem"
-              style={{
-                //   add these two
-                //   you can generate the color from here https://cssgradient.io/
-                background: "rgb(4,7,29)",
-                backgroundColor:
-                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-                // add this border radius to make it more rounded so that the moving border is more realistic
-                borderRadius: `calc(1.75rem* 0.96)`,
-              }}
-            >
-              <blockquote>
-                <div
-                  aria-hidden="true"
-                  className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-                ></div>
-                <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-                  {item.quote}
-                </span>
-                <div className="relative z-20 mt-6 flex flex-row items-center">
-                  <span className="flex flex-col gap-1">
-                    <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                      {item.name}
-                    </span>
-                    <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                      {item.title}
-                    </span>
-                  </span>
-                </div>
-              </blockquote>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+        {items.map((item, idx) => (
+          <li
+            key={`${item.name}-${idx}`}
+            ref={(el) => (cardRefs.current[idx] = el)}
+            className={cn(
+              "relative shrink-0 rounded-2xl border",
+              "w-[350px] md:w-[450px]",
+              "px-8 py-6",
+              "flex flex-col",
+              "border-neutral-200 dark:border-slate-800",
+              "text-black dark:text-white"
+            )}
+            style={{
+              height: maxHeight ? `${maxHeight}px` : "auto",
+              background: "linear-gradient(90deg, #04071d 0%, #0c0e23 100%)",
+              borderRadius: "1.7rem",
+            }}
+          >
+            <blockquote className="flex flex-col justify-between h-full">
+              <span className="text-sm leading-relaxed text-gray-100">
+                {item.quote}
+              </span>
+
+              <div className="mt-6">
+                <p className="text-sm font-medium text-gray-400">{item.name}</p>
+                <p className="text-xs text-gray-500">{item.title}</p>
+              </div>
+            </blockquote>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };

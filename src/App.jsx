@@ -1,55 +1,35 @@
 import React, { lazy, Suspense } from "react";
-
 import { Routes, Route } from "react-router-dom";
 
-import { FloatingNavAce } from "@/components/layout/NavbarFloatingAce.jsx";
 import { FloatingDockAce } from "@/components/layout/NavFloatingAceV2.jsx";
-import { Vortex } from "@/components/ui/vortex";
 import { VortexAce } from "@/components/ui/VortexAce.jsx";
-
 import Footer from "@/components/layout/Footer.jsx";
 
 import Home from "@/pages/Home.jsx";
-// import About from "@/pages/About.jsx";
-// import Projects from "@/pages/Projects.jsx";
-// import Contact from "@/pages/Contact.jsx";
-import "@/App.scss";
-import Counter from "./pages/Counter";
-import MyResume from "./pages/MyResume";
-import { GridBackgroundAce } from "./components/ui/GridBackground";
-import Navbar from "./components/layout/Navbar";
 import NavLinkHeaderLeft from "./components/layout/NavLinkHeaderLeft";
 
-//const Home = lazy(() => import("@/pages/Home"));
+import "@/App.scss";
+
+// Lazy-loaded pages
 const About = lazy(() => import("@/pages/About"));
 const Projects = lazy(() => import("@/pages/Projects"));
-const Contact = lazy(() => import("@/pages/Contact"));
 const Contactus = lazy(() => import("@/pages/Contactus"));
+const MyResumeDynamic = lazy(() => import("@/pages/MyResumeDynamic"));
 
 export default function App() {
   return (
     <>
       <FloatingDockAce />
+
       <VortexAce>
         <NavLinkHeaderLeft />
       </VortexAce>
+
       <main className="relative flex flex-col">
-        {/* 🔹 Floating Navbar visible on all pages */}
-        {/* <FloatingNavAce /> */}
-        {/* <NavFloatingAceV2 /> */}
-
-        {/* 🔹 Page Routes */}
-
         <div className="flex-1">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <Home />
-                // <Suspense fallback={<p>Loading...</p>}>
-                // </Suspense>
-              }
-            />
+            <Route path="/" element={<Home />} />
+
             <Route
               path="/about"
               element={
@@ -58,6 +38,7 @@ export default function App() {
                 </Suspense>
               }
             />
+
             <Route
               path="/projects"
               element={
@@ -66,14 +47,7 @@ export default function App() {
                 </Suspense>
               }
             />
-            <Route
-              path="/contact"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <Contact />
-                </Suspense>
-              }
-            />
+
             <Route
               path="/contactus"
               element={
@@ -82,20 +56,19 @@ export default function App() {
                 </Suspense>
               }
             />
+
             <Route
-              path="/myresume"
+              path="/myresumedynamic"
               element={
                 <Suspense fallback={<p>Loading...</p>}>
-                  <MyResume />
+                  <MyResumeDynamic />
                 </Suspense>
               }
             />
           </Routes>
         </div>
 
-        {/* 🔹 Global Footer */}
         <Footer />
-        {/* <Counter /> */}
       </main>
     </>
   );

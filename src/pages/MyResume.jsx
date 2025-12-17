@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineGlobal, AiOutlineLinkedin } from "react-icons/ai";
 import {
   EnvelopeIcon,
   PhoneIcon,
@@ -92,7 +92,17 @@ function MyResume() {
                 href="https://www.linkedin.com/in/shiburaphael/"
                 className="hover:text-blue-600"
               >
-                LinkedIn
+                https://www.linkedin.com/in/shiburaphael/
+              </a>
+            </p>
+            <p className="flex items-center gap-2">
+              <AiOutlineGlobal className="w-4 h-6 text-blue-950" />
+
+              <a
+                href="https://www.shiburaphael.netlify.app/"
+                className="hover:text-blue-600"
+              >
+                shiburaphael.netlify.app
               </a>
             </p>
           </div>

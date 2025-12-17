@@ -52,7 +52,7 @@ export function FloatingDockAce() {
       icon: <IconBrandBehance />,
       href: "https://www.behance.net/shiburaphael",
     },
-    { title: "My Resume", icon: <IconFileCv />, href: "/myresume" },
+    { title: "My Resume", icon: <IconFileCv />, href: "/myresumedynamic" },
     { title: "Contact Us", icon: <IconMail />, href: "/contactus" },
   ];
 
