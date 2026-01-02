@@ -58,6 +58,15 @@ function Contactus() {
               className="w-full px-3 py-2 border rounded-md"
             />
           </div>
+          <div>
+            <label className="block mb-1 text-sm font-medium">Phone No:</label>
+            <input
+              type="phone"
+              name="user_phone"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
 
           <div>
             <label className="block mb-1 text-sm font-medium">Message</label>
