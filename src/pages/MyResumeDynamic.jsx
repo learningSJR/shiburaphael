@@ -234,7 +234,7 @@ function ResumeHeader({ basics }) {
                     href={link.value}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline text-slate-600"
+                    className="hover:underline text-slate-600 text-[0.7rem] md:text-[0.9rem]"
                   >
                     {link.value}
                   </a>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contactus() {
   const formRef = useRef();
@@ -7,10 +8,10 @@ function Contactus() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_shheq7z", //YOUR_SERVICE_ID
+        "template_599wba7", //YOUR_TEMPLATE_ID
         formRef.current,
-        "YOUR_PUBLIC_KEY"
+        "0_J5WH5_EP2Ogrwi1" //YOUR_PUBLIC_KEY
       )
       .then(
         () => {
@@ -29,6 +30,15 @@ function Contactus() {
         <h2 className="mb-4 text-2xl font-bold">Contact Me</h2>
 
         <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
+          <div>
+            <label className="block mb-1 text-sm font-medium">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
           <div>
             <label className="block mb-1 text-sm font-medium">Full Name</label>
             <input

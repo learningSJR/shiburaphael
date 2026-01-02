@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="top-0 left-0 z-50 border-b md:w-full md:fixed bg-surface-dark/90 backdrop-blur border-border-dark ">
+    <header className="top-0 left-0 z-50 border-b md:w-full md:fixed bg-surface-dark/90 backdrop-blur border-border-dark print:p-0 print:shadow-none site-header">
       <div className="container flex items-center justify-between h-16">
         <NavLink to="/" className="flex items-center gap-3 group">
           {/* Logo */}
