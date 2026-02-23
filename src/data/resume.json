@@ -41,7 +41,6 @@
         "React.js, Redux workflows, component-driven development",
         "JavaScript (ES6+), HTML5, CSS3, SCSS",
         "Tailwind CSS, Material UI, Bootstrap, Shadcn UI",
-        "Micro-frontend architecture (Module Federation)",
         "RESTful API integration, JWT authentication",
         "Webpack, Vite, npm/yarn, CI/CD pipelines",
         "Reusable component libraries & UI style guide maintenance",
