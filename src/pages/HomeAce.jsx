@@ -198,10 +198,12 @@ const AnimatedTestimonialsAce = memo(function AnimatedTestimonialsAce({
 const ImagesSliderAce = memo(function ImagesSliderAce() {
   const images = [
     "./shibu.png",
-    "./sjr-logo.png",
     "./RI360.png",
     "./DW360.png",
     "./Finalytics.png",
+    "./mayoBg1.jpg",
+    "./iPhone6+.png",
+    "./mayoApp-help-Screen.png",
     "./PIXD.png",
     "./FHC.png",
     "./popShop.png",
@@ -210,9 +212,10 @@ const ImagesSliderAce = memo(function ImagesSliderAce() {
     "./popShopOrderDetails.png",
     "./timeline-curve.svg",
     "./AxMigration-timeline-curve.svg",
-    "./AxMigration-timeline-text.svg",
     "./timeline.svg",
+    "./sjr-logo.png",
   ];
+
   return (
     <div className="w-full max-w-md sm:max-w-lg md:max-w-xl">
       <ImagesSlider
