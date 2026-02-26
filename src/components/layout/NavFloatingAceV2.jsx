@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineHome } from "react-icons/hi";
+import { IoBriefcaseOutline } from "react-icons/io5";
 import { AiOutlineProduct } from "react-icons/ai";
 import { MdOutlineContactMail } from "react-icons/md";
 import {
@@ -53,6 +54,11 @@ export function FloatingDockAce() {
       href: "https://www.behance.net/shiburaphael",
     },
     { title: "My Resume", icon: <IconFileCv />, href: "/myresumedynamic" },
+    {
+      title: "Case Study",
+      icon: <IoBriefcaseOutline />,
+      href: "/CaseStudyRetail",
+    },
     { title: "Contact Us", icon: <IconMail />, href: "/contactus" },
   ];
 

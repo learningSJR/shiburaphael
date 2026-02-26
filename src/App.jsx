@@ -9,6 +9,7 @@ import Home from "@/pages/Home.jsx";
 import NavLinkHeaderLeft from "./components/layout/NavLinkHeaderLeft";
 
 import "@/App.scss";
+import CaseStudyRetail from "./pages/CaseStudyRetail";
 
 // Lazy-loaded pages
 const About = lazy(() => import("@/pages/About"));
@@ -62,6 +63,15 @@ export default function App() {
               element={
                 <Suspense fallback={<p>Loading...</p>}>
                   <MyResumeDynamic />
+                </Suspense>
+              }
+            />
+
+            <Route
+              path="/CaseStudyRetail"
+              element={
+                <Suspense fallback={<p>Loading...</p>}>
+                  <CaseStudyRetail />
                 </Suspense>
               }
             />
