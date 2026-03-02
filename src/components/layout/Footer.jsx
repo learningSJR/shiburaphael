@@ -5,7 +5,7 @@ import { Vortex } from "@/components/ui/vortex";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col w-full px-0">
+    <footer className="relative flex flex-col w-full px-0 justify-center">
       <div className="absolute inset-0 z-10 w-full h-full bg-black/40 sm:text-xs" />
 
       <span
@@ -14,7 +14,7 @@ export default function Footer() {
       />
 
       <VortexAce>
-        <div className="flex flex-col items-center justify-center text-xs text-center text-slate-500">
+        <div className="flex flex-col items-center justify-center text-xs text-center text-slate-500 w-full ">
           <div className="w-[40rem] h-auto absolute top-0 animate-slide-x">
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute top-0 w-3/4 h-px inset-x-20 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
