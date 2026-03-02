@@ -6,7 +6,7 @@ import WeatherApp from "./WeatherApp";
 
 export default function Projects() {
   return (
-    <main className="space-y-16 section xl:px-12 bg-dark-radial blocks">
+    <main className="space-y-16 section xl:px-12">
       <Reveal>
         <h2 className="text-4xl font-bold text-center font-heading text-primary">
           Projects

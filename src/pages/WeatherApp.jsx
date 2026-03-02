@@ -23,8 +23,8 @@ function WeatherApp() {
   // 🌦 Fetch weather data
   const { data, loading, error } = useFetchV2(
     `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${encodeURIComponent(
-      finalQuery
-    )}`
+      finalQuery,
+    )}`,
   );
 
   function renderError(message) {
@@ -37,7 +37,7 @@ function WeatherApp() {
 
   function renderWeather() {
     return (
-      <div className="flex flex-col items-center justify-center weather-card">
+      <div className="flex flex-col items-center justify-center weather-card w-full">
         <h2>{`${data?.location.name}, ${data?.location.country}`}</h2>
         <img
           src={`https:${data?.current?.condition?.icon}`}
@@ -55,8 +55,8 @@ function WeatherApp() {
   }
 
   return (
-    <div className="app">
-      <div className="widget-container">
+    <div className="flex flex-col w-full mx-auto">
+      <div className="container bg-slate-900 p-6 rounded-2xl shadow">
         <div className="weather-card-container">
           <h1 className="app-title">Weather Widget</h1>
           <div className="search-container">

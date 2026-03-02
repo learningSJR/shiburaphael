@@ -1,85 +1,43 @@
-import React, { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import React from "react";
+import {
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-import { FloatingDockAce } from "@/components/layout/NavFloatingAceV2.jsx";
+// import { FloatingDockAce } from "@/components/layout/NavFloatingAceV2.jsx";
 import { VortexAce } from "@/components/ui/VortexAce.jsx";
 import Footer from "@/components/layout/Footer.jsx";
+import NavLinkHeaderLeft from "@/components/layout/NavLinkHeaderLeft";
 
 import Home from "@/pages/Home.jsx";
-import NavLinkHeaderLeft from "./components/layout/NavLinkHeaderLeft";
+import About from "@/pages/About";
+import Projects from "@/pages/Projects";
+import Contactus from "@/pages/Contactus";
+import MyResumeDynamic from "@/pages/MyResumeDynamic";
+import CaseStudyRetail from "@/pages/CaseStudyRetail";
 
 import "@/App.scss";
-import CaseStudyRetail from "./pages/CaseStudyRetail";
+import { element } from "three/src/nodes/TSL.js";
+import Layout from "@/components/layout/Layout";
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "Projects", element: <Projects /> },
+      { path: "CaseStudyRetail", element: <CaseStudyRetail /> },
+      { path: "MyResumeDynamic", element: <MyResumeDynamic /> },
+      { path: "Contactus", element: <Contactus /> },
+    ],
+  },
+]);
 
-// Lazy-loaded pages
-const About = lazy(() => import("@/pages/About"));
-const Projects = lazy(() => import("@/pages/Projects"));
-const Contactus = lazy(() => import("@/pages/Contactus"));
-const MyResumeDynamic = lazy(() => import("@/pages/MyResumeDynamic"));
-
-export default function App() {
-  return (
-    <>
-      <FloatingDockAce />
-
-      <VortexAce>
-        <NavLinkHeaderLeft />
-      </VortexAce>
-
-      <main className="relative flex flex-col">
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-
-            <Route
-              path="/about"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <About />
-                </Suspense>
-              }
-            />
-
-            <Route
-              path="/projects"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <Projects />
-                </Suspense>
-              }
-            />
-
-            <Route
-              path="/contactus"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <Contactus />
-                </Suspense>
-              }
-            />
-
-            <Route
-              path="/myresumedynamic"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <MyResumeDynamic />
-                </Suspense>
-              }
-            />
-
-            <Route
-              path="/CaseStudyRetail"
-              element={
-                <Suspense fallback={<p>Loading...</p>}>
-                  <CaseStudyRetail />
-                </Suspense>
-              }
-            />
-          </Routes>
-        </div>
-
-        <Footer />
-      </main>
-    </>
-  );
+function App() {
+  return <RouterProvider router={routes} />;
 }
+
+export default App;

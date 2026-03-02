@@ -5,8 +5,8 @@ import { Vortex } from "@/components/ui/vortex";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col w-full">
-      <div className="absolute inset-0 z-10 w-full h-full bg-black/40" />
+    <footer className="relative flex flex-col w-full px-0">
+      <div className="absolute inset-0 z-10 w-full h-full bg-black/40 sm:text-xs" />
 
       <span
         className="absolute inset-0 bg-[linear-gradient(90deg,#6366f1,#9333ea,#6366f1)] 
@@ -14,7 +14,7 @@ export default function Footer() {
       />
 
       <VortexAce>
-        <div className="container flex flex-col items-center justify-center text-sm text-center text-slate-500">
+        <div className="flex flex-col items-center justify-center text-xs text-center text-slate-500">
           <div className="w-[40rem] h-auto absolute top-0 animate-slide-x">
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute top-0 w-3/4 h-px inset-x-20 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
@@ -28,10 +28,10 @@ export default function Footer() {
               All rights reserved.
             </span>
           </div>
-          <div className="mt-2 font-bold">
+          <div className="p-2 md:p-0 mt-0 md:mt-2 font-bold text-sm">
             {profile.email} • {profile.phone}
           </div>
-          <div className="mt-2 font-bold">
+          <div className="mt-2 sm:mt-0 font-bold">
             {`${new Date().toLocaleDateString("en-GB", {
               day: "numeric",
               weekday: "long",

@@ -6,7 +6,7 @@ import {
   IconBriefcase,
 } from "@tabler/icons-react";
 
-export function FloatingNavAce() {
+export default function FloatingNavAce() {
   const navItems = [
     { name: "Home", link: "/", icon: <IconHome className="w-4 h-4" /> },
     { name: "About", link: "/about", icon: <IconUser className="w-4 h-4" /> },

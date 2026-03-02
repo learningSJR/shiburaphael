@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 export default function Reveal({
@@ -6,6 +5,7 @@ export default function Reveal({
   delay = 0,
   direction = "up",
   distance = 40,
+  className = "",
 }) {
   const variants = {
     hidden: {
@@ -18,12 +18,13 @@ export default function Reveal({
       opacity: 1,
       x: 0,
       y: 0,
-      transition: { duration: 0.8, delay, ease: "easeOut" },
+      transition: { duration: 0.6, delay, ease: "easeOut" },
     },
   };
 
   return (
     <motion.div
+      className={className}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}

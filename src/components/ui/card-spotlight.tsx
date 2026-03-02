@@ -1,34 +1,74 @@
-import React, { useRef } from "react";
+"use client";
 
-export function CardSpotlight({ children, className }) {
-  const divRef = useRef(null);
+import { useMotionValue, motion, useMotionTemplate } from "motion/react";
+import React, { MouseEvent as ReactMouseEvent, useState } from "react";
+import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
+import { cn } from "@/lib/utils";
 
-  const handleMouseMove = (e) => {
-    const rect = divRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+export const CardSpotlight = ({
+  children,
+  radius = 350,
+  className,
+  ...props
+}: {
+  radius?: number;
+  children: React.ReactNode;
+} & React.HTMLAttributes<HTMLDivElement>) => {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const [isHovering, setIsHovering] = useState(false);
 
-    divRef.current.style.setProperty("--mouse-x", `${x}px`);
-    divRef.current.style.setProperty("--mouse-y", `${y}px`);
-  };
+  function handleMouseMove({
+    currentTarget,
+    clientX,
+    clientY,
+  }: ReactMouseEvent<HTMLDivElement>) {
+    const { left, top } = currentTarget.getBoundingClientRect();
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  }
+
+  const mask = useMotionTemplate`
+    radial-gradient(
+      ${radius}px circle at ${mouseX}px ${mouseY}px,
+      white,
+      transparent 80%
+    )
+  `;
 
   return (
     <div
-      ref={divRef}
+      className={cn("relative overflow-hidden group/spotlight", className)}
       onMouseMove={handleMouseMove}
-      className={`relative overflow-hidden ${className}`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+      {...props}
     >
-      {/* Spotlight Layer */}
-      <div
-        className="absolute inset-0 transition duration-300 opacity-0 pointer-events-none group-hover:opacity-100"
+      {/* Spotlight Glow Layer */}
+      <motion.div
+        className="absolute inset-0 z-0 transition-opacity duration-300 opacity-0 pointer-events-none group-hover/spotlight:opacity-100"
         style={{
           background:
-            "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(99,102,241,0.15), transparent 40%)",
+            "radial-gradient(circle, rgba(16,185,129,0.12) 0%, rgba(6,182,212,0.08) 40%, transparent 70%)",
+          WebkitMaskImage: mask,
+          maskImage: mask,
         }}
-      />
+      >
+        {/* {isHovering && (
+          <CanvasRevealEffect
+            animationSpeed={4}
+            containerClassName="absolute inset-0 bg-transparent pointer-events-none"
+            colors={[
+              [16, 185, 129], // emerald
+              [6, 182, 212], // cyan
+            ]}
+            dotSize={2}
+          />
+        )} */}
+      </motion.div>
 
-      {/* Content */}
-      <div className="relative z-10">{children}</div>
+      {/* Content stays above */}
+      <div className="relative z-10 h-full">{children}</div>
     </div>
   );
-}
+};

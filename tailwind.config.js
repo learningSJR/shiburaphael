@@ -1,6 +1,5 @@
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import tailwindcssAnimate from "tailwindcss-animate";
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -13,7 +12,7 @@ export default {
           "linear-gradient(90deg, #3b0000 0.000%, #00001e 50.000%, #085b63 100.000%)",
       },
       animation: {
-        "slide-x": "slide-x 4s ease-in-out infinite", // 👈 custom animation
+        "slide-x": "slide-x 4s ease-in-out infinite",
         "gradient-move": "gradient-move 6s linear infinite",
         aurora: "aurora 60s linear infinite",
         scroll:
@@ -25,12 +24,8 @@ export default {
           "50%": { transform: "translateX(50%)" },
         },
         aurora: {
-          from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
-            backgroundPosition: "350% 50%, 350% 50%",
-          },
+          from: { backgroundPosition: "50% 50%, 50% 50%" },
+          to: { backgroundPosition: "350% 50%, 350% 50%" },
         },
         "gradient-move": {
           "0%": { backgroundPosition: "0% 50%" },
@@ -38,13 +33,10 @@ export default {
           "100%": { backgroundPosition: "0% 50%" },
         },
         scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
         },
       },
       colors: {
-        // 🔧 GitHub-style dark theme
         background: {
           dark: "#0d1117",
           light: "#ffffff",
@@ -71,5 +63,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate, daisyui],
 };

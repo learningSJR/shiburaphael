@@ -1,8 +1,49 @@
-body {
-  @apply bg-[#0d1117] text-[#c9d1d9] font-sans antialiased;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  @apply bg-slate-950 text-slate-300 font-sans antialiased;
+} */
 .clip-header {
   clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+}
+
+/* @layer components {
+  .shibu {
+    @apply absolute inset-0 z-0;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, #e4e4e7 1px, transparent 1px),
+      linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+  }
+
+  .dark .shibu {
+    background-image:
+      linear-gradient(to right, #262626 1px, transparent 1px),
+      linear-gradient(to bottom, #262626 1px, transparent 1px);
+  }
+} */
+
+@layer components {
+  .cstext {
+    @apply text-justify text-slate-400;
+  }
+  .cscard {
+    @apply flex flex-col h-full border rounded-2xl hover:shadow-2xl bg-primary/10 border-primary/20;
+  }
+  .resultcard {
+    @apply flex flex-col h-full p-8 text-center transition duration-300 border rounded-2xl bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border-primary/30 hover:shadow-xl;
+  }
+  .learning {
+    @apply flex flex-col h-full p-6 border rounded-2xl border-primary/30 bg-gradient-to-br from-emerald-500/5 to-cyan-500/5;
+  }
+  .csheading {
+    @apply mb-1 text-2xl font-semibold text-transparent sm:text-3xl md:text-4xl bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text;
+  }
+  .bg-noise {
+    @apply absolute inset-0 pointer-events-none opacity-30;
+  }
 }
 
 @media print {

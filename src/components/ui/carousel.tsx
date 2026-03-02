@@ -171,9 +171,9 @@ export default function Carousel({ slides }: CarouselProps) {
         <div className="absolute flex justify-center w-full top-[calc(100%+1.5rem)]">
           <button
             onClick={handlePreviousClick}
-            className="w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 rounded-full hover:-translate-y-0.5 transition"
+            className="w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-950 rounded-full hover:-translate-y-0.5 transition"
           >
-            <IconArrowNarrowRight className="rotate-180 text-neutral-600 dark:text-neutral-200" />
+            <IconArrowNarrowRight className="rotate-180 text-neutral-200 dark:text-neutral-400" />
           </button>
 
           <button

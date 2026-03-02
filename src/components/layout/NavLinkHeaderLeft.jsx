@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 
 function NavLinkHeaderLeft() {
   return (
-    <NavLink to="/" className="flex items-center justify-start gap-3 group">
+    <NavLink
+      to="/"
+      className="flex items-center justify-start gap-3 pl-3 group"
+    >
       {/* Logo */}
       <img
         src="/sjr-logo.png"

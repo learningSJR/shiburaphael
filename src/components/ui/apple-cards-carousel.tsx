@@ -1,4 +1,3 @@
-"use client";
 import React, {
   useEffect,
   useRef,
@@ -13,7 +12,6 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
@@ -227,10 +225,15 @@ export const Card = ({
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
+                className="mt-2 mb-2 text-2xl font-semibold text-neutral-700 md:text-4xl dark:text-slate-900"
               >
                 {card.title}
               </motion.p>
+              <img
+                src={card.src}
+                alt={card.title}
+                className="w-full h-full object-cover rounded-2xl mb-8"
+              />
               <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
@@ -251,7 +254,7 @@ export const Card = ({
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
+            className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-emerald-700 md:text-3xl"
           >
             {card.title}
           </motion.p>
@@ -259,7 +262,6 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className="absolute inset-0 z-10 object-cover"
         />
       </motion.button>
@@ -268,30 +270,26 @@ export const Card = ({
 };
 
 export const BlurImage = ({
-  height,
-  width,
   src,
   className,
   alt,
-  ...rest
-}: ImageProps) => {
+}: {
+  src: string;
+  className?: string;
+  alt?: string;
+}) => {
   const [isLoading, setLoading] = useState(true);
+
   return (
     <img
+      src={src}
+      alt={alt || "Project image"}
+      onLoad={() => setLoading(false)}
       className={cn(
-        "h-full w-full transition duration-300",
-        isLoading ? "blur-sm" : "blur-0",
+        "absolute inset-0 w-full h-full object-cover transition duration-500",
+        isLoading ? "blur-sm scale-105" : "blur-0 scale-100",
         className,
       )}
-      onLoad={() => setLoading(false)}
-      src={src as string}
-      width={width}
-      height={height}
-      loading="lazy"
-      decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
-      alt={alt ? alt : "Background of a beautiful view"}
-      {...rest}
     />
   );
 };
