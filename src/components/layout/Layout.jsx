@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "./Header";
 import { VortexAce } from "@/components/ui/VortexAce.jsx";
 import { Vortex } from "@/components/ui/vortex";
+import FloatingChatboat from "@/components/chatbot/FloatingChatboat";
 function Layout() {
   return (
     <div className="flex flex-col min-h-screen bg-slate-950">
@@ -14,10 +15,12 @@ function Layout() {
           </VortexAce>
         </div>
       </div>
-      <main className="flex-1 pt-20 blocks bg-slate-950 bg-dark-radial">
+      <main className="relative flex-1 pt-20 blocks bg-slate-950 bg-dark-radial">
         <Outlet />
       </main>
       <Footer />
+      {/* Floating AI Resume Chatbot */}
+      <FloatingChatboat />
     </div>
   );
 }

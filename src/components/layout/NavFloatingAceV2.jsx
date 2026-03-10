@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineHome } from "react-icons/hi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { AiOutlineProduct } from "react-icons/ai";
+import { SiChatbot } from "react-icons/si";
 import {
   IconMenu2,
   IconX,
