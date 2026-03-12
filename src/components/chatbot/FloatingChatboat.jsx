@@ -418,6 +418,359 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
       answer:
         "My expected compensation would be aligned with the company’s compensation structure and industry standards, considering my 15+ years of experience in UX design and front-end development. I am open to discussing a package that reflects the role, responsibilities, and growth opportunities.",
     },
+    {
+      keywords: [
+        "your name",
+        "what is your name",
+        "who are you",
+        "introduce yourself",
+        "may i know your name",
+      ],
+      answer:
+        "My name is Shibu Raphael. I am a UX Designer and Front-End Developer with over 15 years of experience in creating user-centered digital experiences. I focus on solving real user problems through research, design thinking, and intuitive interface design.",
+    },
+
+    {
+      keywords: [
+        "your son",
+        "what is your son doing",
+        "your family",
+        "your son career",
+        "tell me about your son",
+      ],
+      answer:
+        "My son is currently focusing on his studies and exploring his interests in technology and creative fields. As a parent, I always encourage curiosity, learning, and problem-solving which are also important qualities in design and innovation.",
+    },
+
+    {
+      keywords: [
+        "your hobbies",
+        "what are your hobbies",
+        "free time",
+        "what do you do in your free time",
+        "hobbies",
+      ],
+      answer:
+        "My hobbies include exploring new design trends, learning emerging UX tools, reading about technology and innovation, and experimenting with creative UI concepts. I also enjoy teaching UX concepts and mentoring aspiring designers.",
+    },
+
+    {
+      keywords: [
+        "what makes you special",
+        "why are you unique in ux",
+        "your strength in ux",
+        "what makes you different",
+        "why should we hire you",
+      ],
+      answer:
+        "What makes me unique in UX is my combination of design thinking and front-end development experience. I not only design user experiences but also understand how they are implemented technically. This helps me bridge the gap between design and development while creating practical and scalable UX solutions.",
+    },
+
+    {
+      keywords: [
+        "your experience",
+        "how many years experience",
+        "experience in ux",
+        "your professional experience",
+      ],
+      answer:
+        "I have over 15 years of professional experience working in UX design, UI design, and front-end development. Throughout my career I have focused on improving usability, simplifying complex workflows, and creating meaningful digital experiences.",
+    },
+
+    {
+      keywords: [
+        "why ux design",
+        "why did you choose ux",
+        "why ux career",
+        "what made you become a ux designer",
+      ],
+      answer:
+        "I chose UX design because I enjoy solving real user problems and improving how people interact with technology. UX allows me to combine creativity, psychology, and problem solving to design experiences that truly help users.",
+    },
+
+    {
+      keywords: [
+        "your skills",
+        "ux skills",
+        "what are your skills",
+        "design skills",
+      ],
+      answer:
+        "My core skills include UX research, wireframing, prototyping, usability testing, interaction design, design systems, and front-end development using modern web technologies. I also focus on accessibility and user-centered design principles.",
+    },
+
+    {
+      keywords: [
+        "portfolio",
+        "your work",
+        "see your work",
+        "case studies",
+        "your portfolio",
+      ],
+      answer:
+        "You can explore my UX case studies and design work in my portfolio. I showcase my design thinking process including research, problem definition, ideation, wireframing, and final UI solutions.",
+    },
+
+    {
+      keywords: [
+        "where are you from",
+        "your location",
+        "which city",
+        "where do you live",
+      ],
+      answer:
+        "I am currently based in India and have worked with various teams and projects focusing on UX design, digital product experiences, and front-end development.",
+    },
+
+    {
+      keywords: [
+        "contact",
+        "how to contact you",
+        "get in touch",
+        "reach you",
+        "contact details",
+      ],
+      answer:
+        "You can contact me through the contact section in my portfolio. I am always open to discussing UX design opportunities, collaborations, and knowledge sharing.",
+    },
+    {
+      keywords: [
+        "ux process",
+        "your ux process",
+        "tell me about your ux process",
+        "design process",
+        "how do you approach ux",
+      ],
+      answer:
+        "My UX process typically follows a structured approach: understanding the problem, conducting user research, defining user needs, creating wireframes and prototypes, testing with users, and refining the design based on feedback. This iterative process ensures the final solution truly solves user problems while aligning with business goals.",
+    },
+
+    {
+      keywords: [
+        "stakeholder feedback",
+        "how do you handle feedback",
+        "handling stakeholder feedback",
+        "design feedback",
+        "client feedback",
+      ],
+      answer:
+        "I see stakeholder feedback as an important part of the design process. I listen carefully, understand their concerns, and align feedback with user needs and business goals. If there are conflicts, I use research insights and usability data to guide discussions and find balanced solutions.",
+    },
+
+    {
+      keywords: [
+        "ux tools",
+        "design tools",
+        "what tools do you use",
+        "ux design tools",
+        "tools you use",
+      ],
+      answer:
+        "I use a range of UX and design tools depending on the project needs. Common tools include Figma for UI design and prototyping, Miro or FigJam for brainstorming and workshops, and usability testing tools for validating designs. I also have experience with front-end technologies to better collaborate with developers.",
+    },
+
+    {
+      keywords: [
+        "case studies",
+        "show your case studies",
+        "portfolio work",
+        "your work examples",
+        "design projects",
+      ],
+      answer:
+        "You can explore my UX case studies in my portfolio. Each case study highlights the complete design journey including the problem statement, user research, design exploration, wireframes, prototypes, and final solutions that improved user experience.",
+    },
+
+    {
+      keywords: [
+        "design thinking",
+        "what is design thinking",
+        "explain design thinking",
+        "design thinking process",
+        "about design thinking",
+      ],
+      answer:
+        "Design thinking is a problem-solving approach that focuses on understanding users, challenging assumptions, and creating innovative solutions. It typically involves stages like empathizing with users, defining the problem, ideating possible solutions, prototyping, and testing to continuously improve the experience.",
+    },
+    {
+      keywords: [
+        "user research",
+        "how do you conduct user research",
+        "research methods",
+        "ux research",
+        "research process",
+      ],
+      answer:
+        "User research helps us understand user behavior, needs, and pain points. I usually conduct interviews, surveys, usability tests, and analytics reviews to gather insights. These insights help guide design decisions and ensure the solution truly addresses user problems.",
+    },
+
+    {
+      keywords: [
+        "usability testing",
+        "what is usability testing",
+        "user testing",
+        "testing designs",
+        "ux testing",
+      ],
+      answer:
+        "Usability testing is the process of evaluating a product by observing real users interacting with it. It helps identify usability issues, navigation problems, and areas of confusion so that the design can be improved before final implementation.",
+    },
+
+    {
+      keywords: [
+        "ui vs ux",
+        "difference between ui and ux",
+        "ui and ux difference",
+        "what is ui",
+        "what is ux",
+      ],
+      answer:
+        "UX focuses on the overall experience of the user when interacting with a product, including usability, accessibility, and satisfaction. UI focuses on the visual elements such as layout, colors, typography, and interactive components that users interact with.",
+    },
+
+    {
+      keywords: [
+        "design system",
+        "what is a design system",
+        "design systems",
+        "ui consistency",
+        "component library",
+      ],
+      answer:
+        "A design system is a collection of reusable components, guidelines, and standards that help maintain consistency across digital products. It includes UI components, typography, colors, spacing rules, and interaction patterns.",
+    },
+
+    {
+      keywords: [
+        "wireframes",
+        "what are wireframes",
+        "wireframing",
+        "low fidelity design",
+        "wireframe meaning",
+      ],
+      answer:
+        "Wireframes are basic visual representations of a user interface. They focus on layout, structure, and functionality rather than visual design. Wireframes help teams quickly explore ideas before moving into detailed UI design.",
+    },
+
+    {
+      keywords: [
+        "prototyping",
+        "what is a prototype",
+        "interactive prototype",
+        "prototype design",
+        "ux prototype",
+      ],
+      answer:
+        "Prototyping involves creating an interactive version of a design to simulate how the final product will work. It helps test ideas, validate user flows, and gather feedback before development begins.",
+    },
+
+    {
+      keywords: [
+        "user personas",
+        "what are personas",
+        "ux personas",
+        "persona definition",
+        "user persona",
+      ],
+      answer:
+        "User personas are fictional representations of target users based on research data. They help designers understand user needs, motivations, and behaviors so that design decisions can focus on real user goals.",
+    },
+
+    {
+      keywords: [
+        "user journey",
+        "what is user journey",
+        "customer journey",
+        "journey mapping",
+        "user journey map",
+      ],
+      answer:
+        "A user journey map visualizes the steps a user takes while interacting with a product or service. It highlights user goals, emotions, and pain points at each stage of the experience.",
+    },
+
+    {
+      keywords: [
+        "interaction design",
+        "what is interaction design",
+        "ixd",
+        "interaction ux",
+        "interactive design",
+      ],
+      answer:
+        "Interaction design focuses on how users interact with a product. It defines how buttons behave, how transitions work, and how users move through different tasks in the interface.",
+    },
+
+    {
+      keywords: [
+        "accessibility",
+        "ux accessibility",
+        "accessible design",
+        "design for accessibility",
+        "inclusive design",
+      ],
+      answer:
+        "Accessibility ensures that digital products can be used by people with different abilities. This includes considerations like screen reader support, color contrast, keyboard navigation, and clear content structure.",
+    },
+
+    {
+      keywords: [
+        "design challenges",
+        "ux challenges",
+        "biggest challenge",
+        "design problems",
+        "ux difficulties",
+      ],
+      answer:
+        "One of the biggest UX challenges is balancing user needs with business goals and technical constraints. A good designer finds practical solutions that satisfy users while meeting business objectives.",
+    },
+
+    {
+      keywords: [
+        "improve ux",
+        "how do you improve ux",
+        "improving user experience",
+        "better ux",
+        "ux improvement",
+      ],
+      answer:
+        "Improving UX involves understanding user needs, simplifying workflows, reducing friction, and continuously testing designs with real users. Iteration based on feedback plays a key role in improving user experience.",
+    },
+
+    {
+      keywords: [
+        "ux metrics",
+        "measure ux success",
+        "ux kpi",
+        "ux performance",
+        "success metrics",
+      ],
+      answer:
+        "UX success can be measured through metrics such as task completion rate, user satisfaction scores, conversion rates, engagement levels, and reduced error rates.",
+    },
+
+    {
+      keywords: [
+        "collaboration",
+        "working with developers",
+        "team collaboration",
+        "design collaboration",
+        "working with teams",
+      ],
+      answer:
+        "UX design works best when designers collaborate closely with developers, product managers, and stakeholders. Open communication and shared understanding help deliver better user experiences.",
+    },
+
+    {
+      keywords: [
+        "future of ux",
+        "ux future",
+        "future trends ux",
+        "ux trends",
+        "design future",
+      ],
+      answer:
+        "The future of UX design will involve more personalization, AI-driven experiences, voice interactions, immersive interfaces, and stronger focus on accessibility and ethical design.",
+    },
   ];
 
   /* ---------------- SMART MATCHING ---------------- */

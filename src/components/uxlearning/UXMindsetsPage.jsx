@@ -83,11 +83,11 @@ export default function UXMindsetsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F9FB] py-20 px-6">
+    <div className="min-h-screen px-6 py-20 bg-dark-radial blocks">
       <div className="max-w-6xl mx-auto">
         {/* Hero */}
         <div className="mb-20 text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-gray-900">
+          <h1 className="text-5xl font-bold tracking-tight text-slate-400">
             UX Designer Thinking Framework
           </h1>
 
