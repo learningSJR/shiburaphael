@@ -21,6 +21,7 @@ import CaseStudyRetail from "@/pages/CaseStudyRetail";
 import "@/App.scss";
 import { element } from "three/src/nodes/TSL.js";
 import Layout from "@/components/layout/Layout";
+import UXMindsetsPage from "./components/uxlearning/UXMindsetsPage";
 // import Chatbot from "@/pages/Chatbot";
 const routes = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const routes = createBrowserRouter([
       { path: "CaseStudyRetail", element: <CaseStudyRetail /> },
       { path: "MyResumeDynamic", element: <MyResumeDynamic /> },
       { path: "Contactus", element: <Contactus /> },
-      // { path: "Chatbot", element: <Chatbot /> },
+      { path: "UXMindset", element: <UXMindsetsPage /> },
     ],
   },
 ]);

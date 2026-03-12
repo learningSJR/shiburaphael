@@ -35,6 +35,7 @@ function FloatingChatbot() {
     "Tell me about yourself",
     "What is your UX design experience?",
     "How many years of experience do you have?",
+    "What is your total years of work experience",
     "What technologies do you specialize in?",
     "What enterprise platforms have you designed?",
     "What projects have you worked on?",
@@ -83,6 +84,10 @@ function FloatingChatbot() {
     "When can you join?",
     "Where can we see your portfolio?",
     "How do you integrate AI-assisted development tools in your design process?",
+    "How many years of experience do you have in React.Js?",
+    "How many years of experience do you have in Javascript?",
+    "How many years of experience do you have in Frontend UI",
+    "How many years of experience do you have in Webpack",
   ];
 
   /* ---------------- KNOWLEDGE BASE ---------------- */
@@ -365,6 +370,53 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
       keywords: ["portfolio", "can we see your"],
       answer:
         "You can explore my portfolio to https://shiburaphael.netlify.app/.",
+    },
+    {
+      keywords: [
+        "total experience",
+        "overall experience",
+        "years of experience",
+      ],
+      answer: "I have over 15 years of experience in the IT industry.",
+    },
+
+    {
+      keywords: [
+        "react experience",
+        "react js experience",
+        "reactjs experience",
+      ],
+      answer:
+        "I have over 5 years of hands-on experience working with React.js in enterprise front-end applications.",
+    },
+
+    {
+      keywords: ["frontend experience", "ui experience", "frontend ui"],
+      answer:
+        "I have more than 8 years of experience in front-end UI development, including modern frameworks and responsive design.",
+    },
+
+    {
+      keywords: ["webpack experience", "webpack"],
+      answer:
+        "I have around 2 years of experience working with Webpack for module bundling and build optimization.",
+    },
+
+    {
+      keywords: ["npm experience", "node package manager", "npm"],
+      answer:
+        "I have around 5 years of experience using NPM for dependency management and project configuration.",
+    },
+    {
+      keywords: [
+        "expected salary",
+        "expected ctc",
+        "salary expectation",
+        "ctc expectation",
+        "compensation",
+      ],
+      answer:
+        "My expected compensation would be aligned with the company’s compensation structure and industry standards, considering my 15+ years of experience in UX design and front-end development. I am open to discussing a package that reflects the role, responsibilities, and growth opportunities.",
     },
   ];
 

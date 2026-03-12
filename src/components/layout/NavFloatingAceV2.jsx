@@ -4,6 +4,7 @@ import { HiOutlineHome } from "react-icons/hi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { AiOutlineProduct } from "react-icons/ai";
 import { SiChatbot } from "react-icons/si";
+import { TbUserScreen } from "react-icons/tb";
 import {
   IconMenu2,
   IconX,
@@ -51,6 +52,11 @@ function NavFloatingAceV2() {
       title: "Behance",
       icon: <IconBrandBehance />,
       external: "https://www.behance.net/shiburaphael",
+    },
+    {
+      title: "UX Mindset",
+      icon: <TbUserScreen />,
+      path: "/UXMindset",
     },
   ];
 
