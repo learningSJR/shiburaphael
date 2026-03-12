@@ -771,6 +771,178 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
       answer:
         "The future of UX design will involve more personalization, AI-driven experiences, voice interactions, immersive interfaces, and stronger focus on accessibility and ethical design.",
     },
+    {
+      keywords: [
+        "your wife",
+        "what does your wife do",
+        "your family",
+        "about your wife",
+        "wife profession",
+      ],
+      answer:
+        "My wife is supportive of my professional journey and plays an important role in my personal life. While I keep family life mostly private, her encouragement has always helped me stay focused on my career and growth.",
+    },
+
+    {
+      keywords: [
+        "your background",
+        "about your background",
+        "professional background",
+        "career background",
+      ],
+      answer:
+        "My background combines UX design and front-end development. Over the past 15+ years, I have worked on improving digital product experiences by focusing on usability, accessibility, and user-centered design.",
+    },
+
+    {
+      keywords: [
+        "your education",
+        "educational background",
+        "what did you study",
+        "your studies",
+      ],
+      answer:
+        "My learning journey includes both formal education and continuous self-learning in design and technology. I constantly update my knowledge through research, UX communities, and hands-on design practice.",
+    },
+    {
+      keywords: [
+        "how to start ux",
+        "start ux career",
+        "beginner ux",
+        "learn ux design",
+        "ux for beginners",
+      ],
+      answer:
+        "To start a UX career, begin by understanding design thinking, user research, and usability principles. Practice by redesigning real products, building case studies, and learning tools like Figma. The most important part is developing a problem-solving mindset.",
+    },
+
+    {
+      keywords: [
+        "skills needed for ux",
+        "ux skills",
+        "what skills ux designer need",
+        "ux requirements",
+      ],
+      answer:
+        "Important UX skills include user research, wireframing, prototyping, interaction design, usability testing, problem solving, and communication. Understanding front-end development is also valuable for collaboration with engineers.",
+    },
+
+    {
+      keywords: [
+        "how to build ux portfolio",
+        "ux portfolio tips",
+        "portfolio advice",
+        "ux case study portfolio",
+      ],
+      answer:
+        "A strong UX portfolio should showcase your thinking process rather than just visuals. Include problem statements, research insights, wireframes, design decisions, testing results, and final outcomes.",
+    },
+
+    {
+      keywords: [
+        "ux career advice",
+        "career advice for designers",
+        "design career guidance",
+        "ux guidance",
+      ],
+      answer:
+        "Focus on solving real problems rather than only creating beautiful screens. Practice user research, study real products, and continuously improve your design thinking skills.",
+    },
+    {
+      keywords: [
+        "why should we hire you",
+        "why hire you",
+        "your value",
+        "what value you bring",
+      ],
+      answer:
+        "I bring a strong combination of UX design expertise and front-end development experience. This allows me to create practical design solutions that are both user-friendly and technically feasible.",
+    },
+
+    {
+      keywords: [
+        "team collaboration",
+        "working with teams",
+        "teamwork",
+        "collaborate with teams",
+      ],
+      answer:
+        "I believe great UX comes from collaboration. I work closely with developers, product managers, and stakeholders to ensure design decisions align with user needs and business goals.",
+    },
+
+    {
+      keywords: [
+        "handle tight deadlines",
+        "deadline pressure",
+        "working under pressure",
+        "project deadlines",
+      ],
+      answer:
+        "When working under tight deadlines, I focus on prioritizing key user needs and delivering the most impactful design improvements first. Clear communication with the team also helps ensure realistic timelines.",
+    },
+    {
+      keywords: [
+        "business value of ux",
+        "ux business impact",
+        "why ux important for business",
+        "value of ux",
+      ],
+      answer:
+        "UX design directly impacts business success by improving customer satisfaction, increasing conversions, reducing support costs, and building stronger user loyalty.",
+    },
+
+    {
+      keywords: [
+        "product strategy",
+        "ux product strategy",
+        "design strategy",
+        "strategic design",
+      ],
+      answer:
+        "UX strategy aligns user needs with business goals. By understanding customer behavior and market context, designers can help create products that deliver meaningful value and competitive advantage.",
+    },
+    {
+      keywords: [
+        "ux and ai",
+        "ai design",
+        "future of ai ux",
+        "ai user experience",
+      ],
+      answer:
+        "AI is transforming UX by enabling more personalized and intelligent experiences. Designers must focus on transparency, ethical design, and making AI interactions understandable and trustworthy for users.",
+    },
+
+    {
+      keywords: ["future of ux", "ux future", "future trends", "ux innovation"],
+      answer:
+        "The future of UX will include AI-driven personalization, voice interfaces, immersive experiences like AR/VR, and stronger focus on accessibility and ethical design.",
+    },
+    {
+      keywords: [
+        "mentorship",
+        "can you mentor",
+        "design mentorship",
+        "learning support",
+      ],
+      answer:
+        "I enjoy sharing knowledge and guiding aspiring designers. While I may not always be able to provide full mentorship, I am happy to share advice and resources to help people grow in UX.",
+    },
+
+    {
+      keywords: [
+        "connect with you",
+        "network",
+        "professional connection",
+        "collaborate",
+      ],
+      answer:
+        "I am always open to meaningful conversations about UX design, technology, and collaboration opportunities. You can connect with me through my portfolio contact section.",
+    },
+    {
+      keywords: ["default"],
+      answer:
+        "That's an interesting question. You can ask me about UX design, my experience, case studies, tools I use, design thinking, or career advice.",
+    },
   ];
 
   /* ---------------- SMART MATCHING ---------------- */
