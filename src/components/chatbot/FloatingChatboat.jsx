@@ -432,6 +432,8 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
 
     {
       keywords: [
+        "kid",
+        "son",
         "your son",
         "what is your son doing",
         "your family",
@@ -773,11 +775,14 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
     },
     {
       keywords: [
+        "wife",
         "your wife",
-        "what does your wife do",
-        "your family",
         "about your wife",
+        "what does your wife do",
+        "what is your wife",
         "wife profession",
+        "tell me about your wife",
+        "who is your wife",
       ],
       answer:
         "My wife is supportive of my professional journey and plays an important role in my personal life. While I keep family life mostly private, her encouragement has always helped me stay focused on my career and growth.",
