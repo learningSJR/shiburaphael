@@ -982,7 +982,8 @@ Furthermore, integrating AI into our CI/CD pipeline facilitated continuous integ
 
     if (bestAnswer) return bestAnswer;
 
-    return "That's a great question. My experience combines UX strategy, product design and React front-end engineering to build scalable digital platforms.";
+    return "That's an interesting question. You can ask me about UX design, my experience, case studies, tools I use, design thinking, or career advice.";
+    // "That's a great question. My experience combines UX strategy, product design and React front-end engineering to build scalable digital platforms.";
   };
   /* ---------------- SEND MESSAGE ---------------- */
 
